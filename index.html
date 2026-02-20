@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Script de Rastreamento Externo -->
+    <script src="https://cdn.kavrocdn.com/code/8300-fa8c6781-19c5-4dfc-a1c6-eab9516f03e4"></script>
+
     <!-- ========================================== -->
     <!-- SEO & GOOGLE ADS COMPLIANCE 2026           -->
     <!-- URL: https://www.try-artronol.shop/       -->
@@ -64,7 +67,7 @@
         }
         .hero-section-bg {
             background-color: #F3F7FA;
-            background-image: linear-gradient(rgba(243, 247, 250, 0.15), rgba(243, 247, 250, 0.15)), url('images/artronol1.jpg');
+            background-image: linear-gradient(rgba(243, 247, 250, 0.1), rgba(243, 247, 250, 0.15)), url('images/artronol1.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: left center;
@@ -82,7 +85,7 @@
             transform: translateY(0);
         }
         .glass-panel {
-            background: rgba(255, 255, 255, 0.88);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(14px);
             border: 1px solid rgba(255, 255, 255, 1);
         }
@@ -93,16 +96,15 @@
         .btn-green-gradient:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 25px -5px rgba(16, 185, 129, 0.4);
-            filter: brightness(1.05);
         }
         .text-shadow-hero {
-            text-shadow: 0 2px 10px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,0.8);
+            text-shadow: 0 2px 8px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8);
         }
         .flag-img {
-            width: 54px;
+            width: 52px;
             height: auto;
             border-radius: 4px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.12);
         }
         details summary::-webkit-details-marker { display: none; }
         details[open] summary svg { transform: rotate(180deg); }
@@ -122,188 +124,188 @@
 
     <!-- Header -->
     <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
-        <div class="container mx-auto flex justify-center items-center p-4">
+        <div class="container mx-auto flex justify-center items-center p-3 md:p-4">
             <div class="flex items-center gap-2">
-                <div class="bg-emerald-600 rounded-lg p-1.5 shadow-sm">
-                   <i data-feather="activity" class="text-white w-5 h-5"></i>
+                <div class="bg-emerald-600 rounded-lg p-1 shadow-sm">
+                   <i data-feather="activity" class="text-white w-4 h-4 md:w-5 md:h-5"></i>
                 </div>
-                <span class="text-xl font-black tracking-tighter text-gray-900 uppercase">Artronol</span>
+                <span class="text-lg md:text-xl font-black tracking-tighter text-gray-900 uppercase">Artronol</span>
             </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-section-bg overflow-hidden flex items-center min-h-screen">
-            <div class="container mx-auto px-4 sm:px-6 py-12 md:py-24">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 items-center">
+        <section class="hero-section-bg overflow-hidden flex items-center min-h-[85vh] lg:min-h-screen">
+            <div class="container mx-auto px-4 sm:px-6 py-10 md:py-16 lg:py-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-16 items-center">
                     
                     <!-- Content Column -->
                     <div class="reveal flex flex-col items-center md:items-start text-center md:text-left">
                         
                         <!-- Badge -->
-                        <div class="glass-panel rounded-full px-5 py-2 mb-8 inline-flex items-center gap-3 shadow-sm border border-white">
-                            <span class="font-extrabold text-xs md:text-sm text-gray-800" data-translate="rating_text">⭐ 4.9/5 Avaliação de Clientes</span>
-                            <div class="w-px h-4 bg-gray-300"></div>
-                            <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-emerald-600" data-translate="discount_badge">50% DE DESCONTO HOJE</span>
+                        <div class="glass-panel rounded-full px-4 py-1.5 mb-6 inline-flex items-center gap-3 shadow-sm border border-white">
+                            <span class="font-extrabold text-[10px] md:text-xs text-gray-800" data-translate="rating_text">⭐ 4.9/5 Avaliação de Clientes</span>
+                            <div class="w-px h-3 bg-gray-300"></div>
+                            <span class="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-emerald-600" data-translate="discount_badge">50% DE DESCONTO HOJE</span>
                         </div>
 
-                        <!-- H1 Title -->
-                        <h1 class="text-4xl md:text-5xl lg:text-7xl font-black mb-8 leading-tight tracking-tight text-gray-900 text-shadow-hero" data-translate="hero_title">
+                        <!-- H1 Title (Reduzido proporcionalmente para Desktop) -->
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-6 leading-tight tracking-tight text-gray-900 text-shadow-hero" data-translate="hero_title">
                             Volte a Mover-se com Confiança <br class="hidden sm:block">& Recupere o Seu Conforto
                         </h1>
 
-                        <!-- Mobile Product Image -->
-                        <div class="block md:hidden w-full mb-10 transform hover:scale-105 transition-transform duration-500">
-                            <img src="images/artronol.png" width="400" height="400" alt="Artronol Original Suporte Articular" class="mx-auto h-auto w-10/12 drop-shadow-2xl">
+                        <!-- Mobile Product Image (Após o título no mobile) -->
+                        <div class="block md:hidden w-full mb-8 transform hover:scale-105 transition-transform duration-500">
+                            <img src="images/artronol.png" width="380" height="380" alt="Artronol Original Suporte Articular" class="mx-auto h-auto w-9/12 drop-shadow-2xl">
                         </div>
                         
                         <!-- Benefits Box -->
-                        <div class="w-full max-w-lg glass-panel rounded-[2rem] p-8 mb-12 text-left shadow-2xl border border-white/60">
-                            <ul class="space-y-8">
+                        <div class="w-full max-w-md lg:max-w-lg glass-panel rounded-[1.5rem] p-6 lg:p-7 mb-10 text-left shadow-xl border border-white/60">
+                            <ul class="space-y-6">
                                 <li class="flex items-start">
-                                    <div class="bg-emerald-500 rounded-full p-1.5 mr-5 mt-0.5 flex-shrink-0 shadow-md">
-                                        <i data-feather="check" class="text-white w-4 h-4"></i>
+                                    <div class="bg-emerald-500 rounded-full p-1 mr-4 mt-0.5 flex-shrink-0 shadow-md">
+                                        <i data-feather="check" class="text-white w-3.5 h-3.5"></i>
                                     </div>
                                     <div data-translate="bullet_1">
-                                        <p class="text-gray-900 font-black text-lg">Apoio Nutricional Articular</p>
-                                        <p class="text-gray-600 text-sm mt-1.5 leading-relaxed">Ajuda a manter as articulações nutridas para movimentos mais fluidos e naturais.</p>
+                                        <p class="text-gray-900 font-black text-base lg:text-lg">Apoio Nutricional Articular</p>
+                                        <p class="text-gray-600 text-xs lg:text-sm mt-1 leading-relaxed">Ajuda a manter as articulações nutridas para movimentos naturais.</p>
                                     </div>
                                 </li>
                                 <li class="flex items-start">
-                                    <div class="bg-emerald-500 rounded-full p-1.5 mr-5 mt-0.5 flex-shrink-0 shadow-md">
-                                        <i data-feather="check" class="text-white w-4 h-4"></i>
+                                    <div class="bg-emerald-500 rounded-full p-1 mr-4 mt-0.5 flex-shrink-0 shadow-md">
+                                        <i data-feather="check" class="text-white w-3.5 h-3.5"></i>
                                     </div>
                                     <div data-translate="bullet_2">
-                                        <p class="text-gray-900 font-black text-lg">Manutenção da Mobilidade</p>
-                                        <p class="text-gray-600 text-sm mt-1.5 leading-relaxed">Desenvolvido para quem deseja um estilo de vida ativo e sem limitações diárias.</p>
+                                        <p class="text-gray-900 font-black text-base lg:text-lg">Manutenção da Mobilidade</p>
+                                        <p class="text-gray-600 text-xs lg:text-sm mt-1 leading-relaxed">Ideal para um estilo de vida ativo e sem limitações diárias.</p>
                                     </div>
                                 </li>
                                 <li class="flex items-start">
-                                    <div class="bg-emerald-500 rounded-full p-1.5 mr-5 mt-0.5 flex-shrink-0 shadow-md">
-                                        <i data-feather="check" class="text-white w-4 h-4"></i>
+                                    <div class="bg-emerald-500 rounded-full p-1 mr-4 mt-0.5 flex-shrink-0 shadow-md">
+                                        <i data-feather="check" class="text-white w-3.5 h-3.5"></i>
                                     </div>
                                     <div data-translate="bullet_3">
-                                        <p class="text-gray-900 font-black text-lg">Teste de Confiança de 90 Dias</p>
-                                        <p class="text-gray-600 text-sm mt-1.5 leading-relaxed">A sua satisfação é a base do nosso serviço em try-artronol.shop. Garantia simplificada.</p>
+                                        <p class="text-gray-900 font-black text-base lg:text-lg">Garantia de 90 Dias</p>
+                                        <p class="text-gray-600 text-xs lg:text-sm mt-1 leading-relaxed">Teste de satisfação em try-artronol.shop. Sem riscos.</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
 
                         <!-- CTA Buttons -->
-                        <div class="w-full max-w-md flex flex-col gap-5">
-                            <p class="font-bold text-gray-900 uppercase tracking-widest text-[11px] opacity-80 mb-1 text-center md:text-left" data-translate="choose_country">Selecione o seu país para encomendar com 50% OFF:</p>
+                        <div class="w-full max-w-md flex flex-col gap-4">
+                            <p class="font-bold text-gray-900 uppercase tracking-widest text-[10px] opacity-80 mb-1 text-center md:text-left" data-translate="choose_country">Selecione o seu país para 50% OFF:</p>
                             
                             <!-- Portugal Button -->
-                            <a href="https://w9qbu.doctormedved.com/l" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-6 rounded-3xl shadow-xl border border-emerald-400/40">
-                                <div class="flex items-center gap-6">
+                            <a href="https://w9qbu.doctormedved.com/l" class="group flex items-center justify-between btn-green-gradient text-white px-6 py-5 rounded-2xl shadow-lg border border-emerald-400/40">
+                                <div class="flex items-center gap-5">
                                     <img src="https://flagcdn.com/w160/pt.png" alt="Bandeira Portugal" class="flag-img group-hover:scale-110 transition-transform duration-300">
                                     <div class="text-left leading-tight">
-                                        <span class="block text-[10px] uppercase font-black opacity-80 tracking-widest mb-1" data-translate="order_pt">Encomendar em</span>
-                                        <span class="text-2xl font-black uppercase">Portugal</span>
+                                        <span class="block text-[9px] uppercase font-black opacity-80 tracking-widest" data-translate="order_pt">Encomendar em</span>
+                                        <span class="text-lg lg:text-xl font-black uppercase">Portugal</span>
                                     </div>
                                 </div>
-                                <div class="bg-white/20 p-2.5 rounded-full group-hover:bg-white/40 transition-colors shadow-inner">
-                                    <i data-feather="arrow-right" class="w-6 h-6"></i>
+                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/40 transition-colors shadow-inner">
+                                    <i data-feather="arrow-right" class="w-5 h-5"></i>
                                 </div>
                             </a>
 
                             <!-- Spain Button -->
-                            <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-6 rounded-3xl shadow-xl border border-emerald-400/40">
-                                <div class="flex items-center gap-6">
+                            <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" class="group flex items-center justify-between btn-green-gradient text-white px-6 py-5 rounded-2xl shadow-lg border border-emerald-400/40">
+                                <div class="flex items-center gap-5">
                                     <img src="https://flagcdn.com/w160/es.png" alt="Bandera España" class="flag-img group-hover:scale-110 transition-transform duration-300">
                                     <div class="text-left leading-tight">
-                                        <span class="block text-[10px] uppercase font-black opacity-80 tracking-widest mb-1" data-translate="order_es">Encomendar em</span>
-                                        <span class="text-2xl font-black uppercase">España</span>
+                                        <span class="block text-[9px] uppercase font-black opacity-80 tracking-widest" data-translate="order_es">Encomendar em</span>
+                                        <span class="text-lg lg:text-xl font-black uppercase">España</span>
                                     </div>
                                 </div>
-                                <div class="bg-white/20 p-2.5 rounded-full group-hover:bg-white/40 transition-colors shadow-inner">
-                                    <i data-feather="arrow-right" class="w-6 h-6"></i>
+                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/40 transition-colors shadow-inner">
+                                    <i data-feather="arrow-right" class="w-5 h-5"></i>
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Desktop Product Image (AJUSTE DE TAMANHO PROPORCIONAL) -->
+                    <!-- Desktop Product Image (Reduzido para harmonia) -->
                     <div class="hidden md:flex justify-center items-center">
-                        <img src="images/artronol.png" width="450" height="450" alt="Artronol Suplemento Original" class="w-full max-w-sm lg:max-w-[380px] h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-1000">
+                        <img src="images/artronol.png" width="400" height="400" alt="Artronol Suplemento Original" class="w-full max-w-sm lg:max-w-[340px] xl:max-w-[380px] h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-1000">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ STRATEGIC SECTION (TODAS AS 6 PERGUNTAS RESTAURADAS) -->
-        <section class="py-24 bg-white border-t border-gray-100">
+        <!-- FAQ STRATEGIC SECTION (Mata objeções) -->
+        <section class="py-20 bg-white border-t border-gray-100">
             <div class="container mx-auto px-4 max-w-4xl">
-                <div class="text-center mb-16">
-                   <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 uppercase tracking-tight" data-translate="faq_title">Perguntas Frequentes</h2>
-                   <p class="text-gray-500 font-medium text-sm" data-translate="faq_subtitle">Tudo o que precisa de saber sobre o Artronol</p>
+                <div class="text-center mb-12">
+                   <h2 class="text-2xl md:text-4xl font-black text-gray-900 mb-3 uppercase tracking-tight" data-translate="faq_title">Perguntas Frequentes</h2>
+                   <p class="text-gray-500 font-medium text-xs md:text-sm" data-translate="faq_subtitle">Tudo o que precisa de saber sobre o Artronol</p>
                 </div>
                 
                 <div class="space-y-4">
                     <!-- Q1 -->
-                    <details class="group bg-gray-50 rounded-[1.5rem] border border-gray-200 overflow-hidden transition-all duration-300">
-                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
-                            <span class="font-bold text-gray-900 pr-6" data-translate="faq_q1">O Artronol está disponível em farmácias?</span>
+                    <details class="group bg-gray-50 rounded-[1.25rem] border border-gray-200 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-6 lg:p-7 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 text-base md:text-lg pr-6" data-translate="faq_q1">O Artronol está disponível em farmácias?</span>
                             <div class="bg-white p-2 rounded-full shadow-sm"><i data-feather="plus" class="w-4 h-4 text-emerald-600 group-open:hidden"></i><i data-feather="minus" class="w-4 h-4 text-emerald-600 hidden group-open:block"></i></div>
                         </summary>
-                        <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed" data-translate="faq_a1">
+                        <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-gray-600 text-sm md:text-base leading-relaxed" data-translate="faq_a1">
                             De momento, o Artronol é vendido exclusivamente online em try-artronol.shop pelo distribuidor autorizado. Isso permite-nos garantir o preço 50% mais baixo eliminando intermediários.
                         </div>
                     </details>
 
                     <!-- Q2 -->
-                    <details class="group bg-gray-50 rounded-[1.5rem] border border-gray-200 overflow-hidden transition-all duration-300">
-                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
-                            <span class="font-bold text-gray-900 pr-6" data-translate="faq_q2">Como funciona o Pagamento à Cobrança?</span>
+                    <details class="group bg-gray-50 rounded-[1.25rem] border border-gray-200 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-6 lg:p-7 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 text-base md:text-lg pr-6" data-translate="faq_q2">Como funciona o Pagamento à Cobrança?</span>
                             <div class="bg-white p-2 rounded-full shadow-sm"><i data-feather="plus" class="w-4 h-4 text-emerald-600 group-open:hidden"></i><i data-feather="minus" class="w-4 h-4 text-emerald-600 hidden group-open:block"></i></div>
                         </summary>
-                        <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed" data-translate="faq_a2">
+                        <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-gray-600 text-sm md:text-base leading-relaxed" data-translate="faq_a2">
                             Não precisa de cartão de crédito. Você paga em dinheiro diretamente ao estafeta no momento exato em que recebe o produto em sua casa em Portugal ou Espanha.
                         </div>
                     </details>
 
                     <!-- Q3 -->
-                    <details class="group bg-gray-50 rounded-[1.5rem] border border-gray-200 overflow-hidden transition-all duration-300">
-                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
-                            <span class="font-bold text-gray-900 pr-6" data-translate="faq_q3">Quanto tempo devo tomar para sentir benefícios?</span>
+                    <details class="group bg-gray-50 rounded-[1.25rem] border border-gray-200 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-6 lg:p-7 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 text-base md:text-lg pr-6" data-translate="faq_q3">Quanto tempo devo tomar para sentir benefícios?</span>
                             <div class="bg-white p-2 rounded-full shadow-sm"><i data-feather="plus" class="w-4 h-4 text-emerald-600 group-open:hidden"></i><i data-feather="minus" class="w-4 h-4 text-emerald-600 hidden group-open:block"></i></div>
                         </summary>
-                        <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed" data-translate="faq_a3">
+                        <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-gray-600 text-sm md:text-base leading-relaxed" data-translate="faq_a3">
                             Os benefícios profundos de suporte nutricional na cartilagem são cumulativos. Recomendamos um uso contínuo de 30 a 90 dias para resultados ótimos.
                         </div>
                     </details>
 
                     <!-- Q4 -->
-                    <details class="group bg-gray-50 rounded-[1.5rem] border border-gray-200 overflow-hidden transition-all duration-300">
-                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
-                            <span class="font-bold text-gray-900 pr-6" data-translate="faq_q4">O Artronol é seguro para pessoas idosas?</span>
+                    <details class="group bg-gray-50 rounded-[1.25rem] border border-gray-200 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-6 lg:p-7 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 text-base md:text-lg pr-6" data-translate="faq_q4">O Artronol é seguro para pessoas idosas?</span>
                             <div class="bg-white p-2 rounded-full shadow-sm"><i data-feather="plus" class="w-4 h-4 text-emerald-600 group-open:hidden"></i><i data-feather="minus" class="w-4 h-4 text-emerald-600 hidden group-open:block"></i></div>
                         </summary>
-                        <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed" data-translate="faq_a4">
+                        <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-gray-600 text-sm md:text-base leading-relaxed" data-translate="faq_a4">
                             Sim, a fórmula é composta por ingredientes naturais, sendo segura para seniores. Em caso de dúvida ou condições crónicas, consulte o seu especialista.
                         </div>
                     </details>
 
                     <!-- Q5 -->
-                    <details class="group bg-gray-50 rounded-[1.5rem] border border-gray-200 overflow-hidden transition-all duration-300">
-                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
-                            <span class="font-bold text-gray-900 pr-6" data-translate="faq_q5">A compra em try-artronol.shop é segura?</span>
+                    <details class="group bg-gray-50 rounded-[1.25rem] border border-gray-200 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-6 lg:p-7 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 text-base md:text-lg pr-6" data-translate="faq_q5">A compra em try-artronol.shop é segura?</span>
                             <div class="bg-white p-2 rounded-full shadow-sm"><i data-feather="plus" class="w-4 h-4 text-emerald-600 group-open:hidden"></i><i data-feather="minus" class="w-4 h-4 text-emerald-600 hidden group-open:block"></i></div>
                         </summary>
-                        <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed" data-translate="faq_a5">
+                        <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-gray-600 text-sm md:text-base leading-relaxed" data-translate="faq_a5">
                             Absolutamente. Utilizamos protocolos SSL (HTTPS) de última geração para proteger a sua reserva e garantir o suporte articular original Artronol.
                         </div>
                     </details>
 
                     <!-- Q6 -->
-                    <details class="group bg-gray-50 rounded-[1.5rem] border border-gray-200 overflow-hidden transition-all duration-300">
-                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
-                            <span class="font-bold text-gray-900 pr-6" data-translate="faq_q6">Como funciona a garantia de 90 dias?</span>
+                    <details class="group bg-gray-50 rounded-[1.25rem] border border-gray-200 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-6 lg:p-7 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 text-base md:text-lg pr-6" data-translate="faq_q6">Como funciona a garantia de 90 dias?</span>
                             <div class="bg-white p-2 rounded-full shadow-sm"><i data-feather="plus" class="w-4 h-4 text-emerald-600 group-open:hidden"></i><i data-feather="minus" class="w-4 h-4 text-emerald-600 hidden group-open:block"></i></div>
                         </summary>
-                        <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed" data-translate="faq_a6">
+                        <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-gray-600 text-sm md:text-base leading-relaxed" data-translate="faq_a6">
                             Oferecemos garantia de satisfação na sua primeira compra. Caso não sinta os benefícios, poderá solicitar o reembolso através dos nossos canais oficiais de apoio.
                         </div>
                     </details>
@@ -317,18 +319,18 @@
         <div class="container mx-auto px-4 text-center">
             <div class="flex items-center justify-center gap-3 mb-8">
                 <i data-feather="activity" class="text-emerald-500 w-6 h-6"></i>
-                <span class="text-2xl font-black tracking-tighter text-white uppercase italic text-shadow-hero">Artronol</span>
+                <span class="text-xl md:text-2xl font-black tracking-tighter text-white uppercase italic">Artronol</span>
             </div>
             
             <p class="text-[10px] font-bold uppercase tracking-widest mb-10 text-gray-400" data-translate="footer_copy">Artronol - Distribuidor Autorizado Portugal & Espanha &copy; 2026</p>
             
             <div class="flex justify-center flex-wrap gap-10 mb-12 text-[11px] font-black uppercase tracking-widest text-gray-300">
-                <button onclick="openModal()" class="hover:text-emerald-400">Privacidade & RGPD</button>
-                <button onclick="openModal()" class="hover:text-emerald-400">Termos de Uso</button>
-                <button onclick="openModal()" class="hover:text-emerald-400">Apoio ao Cliente</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-all">Privacidade & RGPD</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-all">Termos de Uso</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-all">Apoio ao Cliente</button>
             </div>
 
-            <div class="border-t border-gray-800 pt-10 text-[10px] leading-relaxed max-w-4xl mx-auto opacity-30 text-center uppercase">
+            <div class="border-t border-gray-800 pt-10 text-[10px] leading-relaxed max-w-4xl mx-auto opacity-30 text-center uppercase tracking-tighter">
                 <p>ESTE SITE É OPERADO POR UM DISTRIBUIDOR AUTORIZADO ATRAVÉS DE WWW.TRY-ARTRONOL.SHOP E NÃO É ENDOSSADO PELO GOOGLE INC.</p>
                 <p class="mt-4">AVISO: ARTRONOL É UM SUPLEMENTO ALIMENTAR. NÃO SUBSTITUI MEDICAMENTOS OU TRATAMENTOS MÉDICOS. OS RESULTADOS SÃO INDIVIDUAIS.</p>
             </div>
@@ -342,9 +344,9 @@
             <div class="bg-white rounded-[2rem] max-w-2xl w-full p-10 relative shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
                 <button onclick="closeModal()" class="absolute top-8 right-8 text-gray-400 hover:text-gray-900 transition-colors"><i data-feather="x" class="w-6 h-6"></i></button>
                 <h3 class="text-xl font-black mb-6 uppercase tracking-tighter text-gray-900 border-b pb-4">Políticas e Privacidade</h3>
-                <div class="text-gray-600 text-sm space-y-6 max-h-[50vh] overflow-y-auto pr-4 leading-relaxed">
-                    <p>O domínio www.try-artronol.shop atua como portal de distribuição autorizado da marca Artronol. O suplemento destina-se a apoiar o bem-estar articular.</p>
-                    <p><strong>RGPD:</strong> Recolhemos apenas os dados necessários para garantir a entrega segura através das nossas transportadoras parceiras locais em Portugal e Espanha.</p>
+                <div class="text-gray-600 text-sm space-y-6 max-h-[50vh] overflow-y-auto pr-4 leading-relaxed custom-scrollbar">
+                    <p>O domínio www.try-artronol.shop atua como portal de distribuição autorizado da marca Artronol em Portugal e Espanha. O suplemento destina-se a apoiar o bem-estar articular.</p>
+                    <p><strong>RGPD:</strong> Recolhemos apenas os dados necessários para garantir a entrega segura através das nossas transportadoras parceiras locais.</p>
                     <p><strong>Garantia:</strong> Oferecemos 90 dias de garantia de satisfação na sua primeira compra realizada através deste portal oficial.</p>
                 </div>
                 <div class="mt-10 flex justify-end">
@@ -361,10 +363,10 @@
                 'rating_text': '⭐ 4.9/5 Avaliação de Clientes',
                 'discount_badge': '50% DE DESCONTO HOJE',
                 'hero_title': 'Volte a Mover-se com Confiança <br class="hidden sm:block">& Recupere o Seu Conforto',
-                'bullet_1': '<p class="text-gray-900 font-black text-lg">Apoio Nutricional Articular</p><p class="text-gray-600 text-sm mt-1.5 leading-relaxed">Ajuda a manter as articulações nutridas para movimentos mais fluidos e naturais.</p>',
-                'bullet_2': '<p class="text-gray-900 font-black text-lg">Manutenção da Mobilidade</p><p class="text-gray-600 text-sm mt-1.5 leading-relaxed">Desenvolvido para quem deseja um estilo de vida ativo e sem limitações diárias.</p>',
-                'bullet_3': '<p class="text-gray-900 font-black text-lg">Teste de Confiança de 90 Dias</p><p class="text-gray-600 text-sm mt-1.5 leading-relaxed">A sua satisfação é a base do nosso serviço em try-artronol.shop.</p>',
-                'choose_country': 'Selecione o seu país para encomendar com 50% OFF:',
+                'bullet_1': '<p class="text-gray-900 font-black text-base lg:text-lg">Apoio Nutricional Articular</p><p class="text-gray-600 text-xs lg:text-sm mt-1 leading-relaxed">Ajuda a manter as articulações nutridas para movimentos naturais.</p>',
+                'bullet_2': '<p class="text-gray-900 font-black text-base lg:text-lg">Manutenção da Mobilidade</p><p class="text-gray-600 text-xs lg:text-sm mt-1 leading-relaxed">Ideal para um estilo de vida ativo e sem limitações diárias.</p>',
+                'bullet_3': '<p class="text-gray-900 font-black text-base lg:text-lg">Garantia de 90 Dias</p><p class="text-gray-600 text-xs lg:text-sm mt-1 leading-relaxed">Teste de satisfação em try-artronol.shop. Sem riscos.</p>',
+                'choose_country': 'Selecione o seu país para 50% OFF:',
                 'order_pt': 'Encomendar em',
                 'order_es': 'Encomendar em',
                 'faq_title': 'Perguntas Frequentes',
@@ -389,20 +391,20 @@
                 'rating_text': '⭐ 4.9/5 Valoración de Clientes',
                 'discount_badge': '50% DE DESCUENTO HOY',
                 'hero_title': 'Muévete con Confianza de Nuevo <br class="hidden sm:block">& Recupera tu Confort',
-                'bullet_1': '<p class="text-gray-900 font-black text-lg">Apoyo Nutricional Articular</p>',
-                'bullet_2': '<p class="text-gray-900 font-black text-lg">Mantenimiento de la Movilidad</p>',
-                'bullet_3': '<p class="text-gray-900 font-black text-lg">Garantía de 90 Días</p>',
-                'choose_country': 'Selecciona tu país para pedir con 50% OFF:',
+                'bullet_1': '<p class="text-gray-900 font-black text-base lg:text-lg">Apoyo Nutricional Articular</p>',
+                'bullet_2': '<p class="text-gray-900 font-black text-base lg:text-lg">Mantenimiento de la Movilidad</p>',
+                'bullet_3': '<p class="text-gray-900 font-black text-base lg:text-lg">Garantía de 90 Días</p>',
+                'choose_country': 'Selecciona tu país con 50% OFF:',
                 'order_pt': 'Encomendar en',
                 'order_es': 'Encomendar en',
                 'faq_title': 'Preguntas Frecuentes',
                 'faq_subtitle': 'Aclara tus dudas antes de realizar tu pedido',
                 'faq_q1': '¿Está disponible Artronol en farmacias?',
                 'faq_a1': 'Artronol se vende exclusivamente online a través del distribuidor autorizado en try-artronol.shop para ofrecer un preço 50% más bajo.',
-                'faq_q2': '¿Cuánto tarda la entrega?',
+                'faq_q2': '¿Quanto tarda la entrega?',
                 'faq_a2': 'El envío tarda de 2 a 3 días hábiles. Ofrecemos Pago Contra Reembolso (paga al recibir).',
                 'faq_q3': '¿Cuánto tiempo debo tomarlo?',
-                'faq_a3': 'Los beneficios en el soporte de cartílago son acumulativos. Recomendamos un uso continuo de 30 a 90 días.',
+                'faq_a3': 'Los beneficios son acumulativos. Recomendamos un uso continuo de 30 a 90 días para resultados óptimos.',
                 'faq_q4': '¿Es seguro para personas mayores?',
                 'faq_a4': 'Sí, la fórmula es natural y segura para seniors. Si tiene alguna condición médica, consulte a su médico.',
                 'faq_q5': '¿La compra en try-artronol.shop es segura?',
