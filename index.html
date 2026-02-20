@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,212 +8,184 @@
     <!-- GOOGLE ADS SAFE & ADVANCED SEO             -->
     <!-- ========================================== -->
     
-    <!-- 1. Canonical URL -->
     <link rel="canonical" href="https://official.artronol.shop/">
     <link rel="alternate" hreflang="x-default" href="https://official.artronol.shop/">
     
-    <!-- 2. Geo-Targeting Metadata -->
-    <meta name="geo.region" content="US-NY" /> 
-    <meta name="geo.position" content="40.7128;-74.0060" />
-    <meta name="ICBM" content="40.7128, -74.0060" />
+    <title data-translate="meta_title">Artronol Oficial | Recupere o Seu Conforto Diário</title>
+    <meta name="description" content="Fórmula avançada Artronol para o conforto das articulações e mobilidade natural. 70% de desconto hoje.">
     
-    <!-- 3. Safe Metadata (No Cure Claims) -->
-    <title data-translate="meta_title">Artronol Official Store 2026 | Advanced Mobility & Comfort</title>
-    <meta name="title" content="Artronol Official Store 2026 | Advanced Mobility & Comfort">
-    <meta name="description" content="Discover Artronol. Advanced formula designed to support joint comfort, flexibility, and daily mobility. 70% OFF Limited Time Offer. Fast tracked shipping.">
-    <meta name="keywords" content="Artronol, joint support, mobility supplement, comfort formula, flexibility, natural support, Artronol reviews">
-    
-    <!-- 4. Open Graph -->
+    <!-- Open Graph -->
     <meta property="og:type" content="product">
-    <meta property="og:url" content="https://official.artronol.shop/">
-    <meta property="og:title" content="Artronol - Support Your Mobility (70% OFF)">
-    <meta property="og:description" content="Regain your freedom of movement. Artronol supports joint health and comfort. Fast shipping available.">
+    <meta property="og:title" content="Artronol - Volte a Mover-se com Confiança">
     <meta property="og:image" content="images/artronol.png">
-    <meta property="og:site_name" content="Artronol Official Shop">
-    <meta property="og:price:amount" content="39.00">
-    <meta property="og:price:currency" content="USD">
-
-    <!-- 5. Schema.org (JSON-LD) -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Artronol Joint Support Formula",
-        "image": [
-          "images/artronol.png"
-        ],
-        "description": "Premium dietary supplement designed to support joint flexibility and overall mobility.",
-        "sku": "ART-001",
-        "brand": {
-          "@type": "Brand",
-          "name": "Artronol"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "12650",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "offers": {
-          "@type": "Offer",
-          "url": "https://official.artronol.shop/",
-          "priceCurrency": "USD",
-          "price": "39.00",
-          "priceValidUntil": "2026-12-31",
-          "itemCondition": "https://schema.org/NewCondition",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Artronol Official"
-          }
-        }
-      }
-    ]
-    </script>
 
     <!-- Styles & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-        }
-        .star-filled {
-            color: #f59e0b; /* Tailwind amber-500 */
+            color: #2D2D2D;
         }
         .hero-section-bg {
             background-color: #F3F7FA;
-            background-image: linear-gradient(rgba(243, 247, 250, 0.85), rgba(243, 247, 250, 0.85)), url('images/artronol1.jpg');
+            background-image: linear-gradient(rgba(243, 247, 250, 0.65), rgba(243, 247, 250, 0.65)), url('images/artronol1.jpg');
             background-size: cover;
             background-position: center;
         }
-        .modal-open {
-            overflow: hidden;
-        }
         .reveal {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
         }
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
         .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
         }
-        .btn-gradient {
-            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        .btn-green-gradient {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-green-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px -5px rgba(16, 185, 129, 0.4);
+            filter: brightness(1.08);
+        }
+        .btn-green-gradient:active {
+            transform: translateY(-1px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(255,255,255,0.8);
         }
     </style>
 </head>
-<body class="bg-white text-gray-800 relative">
+<body class="bg-white relative">
 
     <!-- Header -->
-    <header class="sticky top-0 bg-white z-40 shadow-sm border-b border-gray-100">
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
         <div class="container mx-auto flex justify-center items-center p-4">
             <div class="flex items-center gap-2">
-                <div class="bg-sky-600 rounded-lg p-1">
+                <div class="bg-emerald-600 rounded-lg p-1">
                    <i data-feather="activity" class="text-white w-5 h-5"></i>
                 </div>
-                <span class="text-xl font-extrabold tracking-tighter text-gray-900">ARTRO<span class="text-sky-600">NOL</span></span>
+                <span class="text-xl font-black tracking-tighter text-gray-900">ARTRO<span class="text-emerald-600">NOL</span></span>
             </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="order" class="hero-section-bg text-[#2D2D2D]">
-            <div class="container mx-auto px-4 sm:px-6 py-10 md:py-20">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-center">
+        <section class="hero-section-bg overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 py-12 md:py-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 items-center">
                     
-                    <!-- Text Content (LEFT COLUMN) -->
-                    <div class="text-center md:text-left md:col-start-1 md:row-start-1 reveal flex flex-col items-center md:items-start">
+                    <!-- Text Content (Esquerda) -->
+                    <div class="reveal flex flex-col items-center md:items-start text-center md:text-left">
                         
                         <!-- Badge -->
-                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
-                            <div class="flex items-center gap-1">
-                                <span class="font-bold text-sm">4.9/5</span>
-                                <i class="star-filled w-4 h-4" data-feather="star" style="fill: #f59e0b;"></i>
-                                <i class="star-filled w-4 h-4" data-feather="star" style="fill: #f59e0b;"></i>
-                                <i class="star-filled w-4 h-4" data-feather="star" style="fill: #f59e0b;"></i>
-                                <i class="star-filled w-4 h-4" data-feather="star" style="fill: #f59e0b;"></i>
-                                <i class="star-filled w-4 h-4" data-feather="star" style="fill: #f59e0b;"></i>
-                            </div>
+                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm">
+                            <span class="font-bold text-sm" data-translate="rating_text">⭐ 4.9/5 Avaliação de Clientes</span>
                             <div class="w-px h-4 bg-gray-300"></div>
-                            <span class="text-xs font-bold uppercase tracking-wide text-sky-700" data-translate="discount_badge">PROMO: 70% OFF TODAY</span>
+                            <span class="text-xs font-bold uppercase tracking-wide text-emerald-700" data-translate="discount_badge">PROMOÇÃO: 70% DE DESCONTO HOJE</span>
                         </div>
 
                         <!-- H1 Title -->
-                        <h1 class="text-3xl sm:text-5xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900" data-translate="hero_title">
-                            Move Freely Again <br class="hidden sm:block">& Feel Your Best
+                        <h1 class="text-3xl sm:text-5xl font-black mb-6 leading-tight tracking-tight text-gray-900 text-shadow-sm" data-translate="hero_title">
+                            Volte a Mover-se com Confiança <br class="hidden sm:block">& Recupere o Seu Conforto Diário
                         </h1>
                         
                         <!-- Description -->
-                        <p class="text-lg md:text-xl mb-8 text-gray-700 leading-relaxed max-w-lg font-medium opacity-90" data-translate="hero_desc">
-                            Artronol is the advanced support formula designed to help maintain joint flexibility and ease daily discomfort.
-                        </p>
-                        
-                        <!-- Mobile Image -->
-                        <div class="my-4 flex justify-center items-center md:hidden reveal w-full">
-                            <img src="images/artronol.png" width="400" height="400" alt="Artronol Supplement Bottle" class="w-full max-w-xs h-auto object-contain drop-shadow-2xl" onerror="this.src='https://via.placeholder.com/400x400?text=Artronol+Product'">
+                        <div class="text-base md:text-lg mb-8 text-gray-800 leading-relaxed max-w-xl font-medium text-shadow-sm space-y-4" data-translate="hero_desc">
+                            <p>Artronol é a fórmula avançada desenvolvida para apoiar a saúde das articulações, ajudar a manter a mobilidade natural e reduzir o desconforto associado ao desgaste do dia a dia.</p>
+                            <p class="opacity-80 text-sm md:text-base">Ideal para quem sente rigidez, tensão ou limitações nos joelhos, costas, ombros e mãos — e quer voltar a sentir-se ativo sem depender constantemente de soluções temporárias.</p>
                         </div>
-
+                        
                         <!-- Benefits Box -->
-                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-md reveal">
-                            <ul class="space-y-4">
+                        <div class="w-full max-w-lg glass-panel rounded-2xl p-6 mb-10 text-left shadow-md">
+                            <ul class="space-y-6">
                                 <li class="flex items-start">
-                                    <div class="bg-green-500 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <div class="bg-emerald-500 rounded-full p-1 mr-4 mt-0.5 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-4 h-4"></i>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_1">Supports Joint Flexibility & Ease</span>
+                                    <div data-translate="bullet_1">
+                                        <p class="text-gray-900 font-bold text-base">Apoia a Flexibilidade e o Conforto Articular</p>
+                                        <p class="text-gray-600 text-sm mt-1 leading-snug">Ajuda a manter articulações mais leves e funcionais, contribuindo para movimentos mais naturais.</p>
+                                    </div>
                                 </li>
                                 <li class="flex items-start">
-                                    <div class="bg-green-500 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <div class="bg-emerald-500 rounded-full p-1 mr-4 mt-0.5 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-4 h-4"></i>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_2">Promotes Active Lifestyle Mobility</span>
+                                    <div data-translate="bullet_2">
+                                        <p class="text-gray-900 font-bold text-base">Favorece Mobilidade para um Estilo de Vida Ativo</p>
+                                        <p class="text-gray-600 text-sm mt-1 leading-snug">Perfeito para quem deseja continuar a caminhar, trabalhar e aproveitar o dia sem limitações constantes.</p>
+                                    </div>
                                 </li>
                                 <li class="flex items-start">
-                                    <div class="bg-green-500 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <div class="bg-emerald-500 rounded-full p-1 mr-4 mt-0.5 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-4 h-4"></i>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_3">90-Day Satisfaction Guarantee</span>
+                                    <div data-translate="bullet_3">
+                                        <p class="text-gray-900 font-bold text-base">Garantia de Satisfação de 90 Dias</p>
+                                        <p class="text-gray-600 text-sm mt-1 leading-snug">Experimente com tranquilidade. Se não estiver satisfeito, pode solicitar reembolso dentro do prazo da garantia.</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
-                    </div>
 
-                    <!-- Desktop Image -->
-                    <div class="hidden md:flex justify-center items-center md:col-start-2 md:row-start-1 md:row-span-2 h-full reveal">
-                        <img src="images/artronol.png" width="500" height="500" alt="Artronol Premium Support" class="w-full max-w-sm h-auto transform transition hover:scale-105 duration-500 drop-shadow-2xl" onerror="this.src='https://via.placeholder.com/500x500?text=Artronol+Product'">
-                    </div>
+                        <!-- CTA Buttons -->
+                        <div class="w-full max-w-md flex flex-col gap-4">
+                            <p class="font-bold text-gray-900 uppercase tracking-widest text-xs opacity-75 mb-1 text-center md:text-left" data-translate="choose_country">Selecione o seu país para encomendar:</p>
+                            
+                            <!-- Botão Portugal com Bandeira no lugar da Sigla -->
+                            <a href="https://w9qbu.doctormedved.com/l" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
+                                <div class="flex items-center gap-5">
+                                    <!-- Bandeira 🇵🇹 em destaque -->
+                                    <span class="text-5xl filter drop-shadow-md group-hover:scale-110 transition-transform duration-300">🇵🇹</span>
+                                    <div class="text-left">
+                                        <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest">Enviar para</span>
+                                        <span class="text-xl font-black" data-translate="btn_pt">Portugal</span>
+                                    </div>
+                                </div>
+                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors shadow-inner">
+                                    <i data-feather="chevron-right" class="w-6 h-6"></i>
+                                </div>
+                            </a>
 
-                    <!-- Buttons Section -->
-                    <div class="flex flex-col gap-4 mt-2 md:mt-4 md:col-start-1 md:row-start-2 w-full max-w-md reveal">
-                        <p class="text-center md:text-left font-bold text-gray-900 uppercase tracking-widest text-xs opacity-75" data-translate="choose_country">Choose your country:</p>
-                        
-                        <div class="grid grid-cols-2 gap-3">
-                            <!-- Portugal Button -->
-                            <a href="https://w9qbu.doctormedved.com/l" rel="noopener noreferrer" class="group flex items-center justify-center btn-gradient text-white text-base font-bold px-4 py-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden">
-                                <span class="relative z-10" data-translate="btn_pt">Portugal</span>
-                                <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
+                            <!-- Botão Espanha com Bandeira no lugar da Sigla -->
+                            <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
+                                <div class="flex items-center gap-5">
+                                    <!-- Bandeira 🇪🇸 em destaque -->
+                                    <span class="text-5xl filter drop-shadow-md group-hover:scale-110 transition-transform duration-300">🇪🇸</span>
+                                    <div class="text-left">
+                                        <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest">Enviar a</span>
+                                        <span class="text-xl font-black" data-translate="btn_es">España</span>
+                                    </div>
+                                </div>
+                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors shadow-inner">
+                                    <i data-feather="chevron-right" class="w-6 h-6"></i>
+                                </div>
                             </a>
                             
-                            <!-- Spain Button -->
-                            <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" rel="noopener noreferrer" class="group flex items-center justify-center btn-gradient text-white text-base font-bold px-4 py-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden">
-                                <span class="relative z-10" data-translate="btn_es">Espanha</span>
-                                <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
-                            </a>
+                            <div class="mt-4 flex items-center justify-center md:justify-start gap-6 text-[10px] font-bold text-gray-500 uppercase tracking-wider opacity-70">
+                                <span class="flex items-center gap-1.5"><i data-feather="truck" class="w-3.5 h-3.5"></i> Envio em 24/48h</span>
+                                <span class="flex items-center gap-1.5"><i data-feather="shield" class="w-3.5 h-3.5"></i> Pagamento Seguro</span>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Product Image (Direita) -->
+                    <div class="reveal flex justify-center items-center">
+                        <img src="images/artronol.png" width="550" height="550" alt="Artronol Premium Suplemento" class="w-full max-w-md h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700">
                     </div>
                 </div>
             </div>
@@ -221,57 +193,44 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p class="font-bold text-white text-lg mb-2">ARTRO<span class="text-sky-500">NOL</span></p>
-            <p class="font-medium text-gray-400 mb-2" data-translate="footer_copy">&copy; 2026 Artronol Official. All rights reserved.</p>
-            <div class="inline-flex items-center gap-2 bg-gray-800/50 px-3 py-1 rounded-full mb-6">
-                <i data-feather="check-circle" class="text-green-400 w-3 h-3"></i>
-                <span class="text-xs text-gray-400" data-translate="footer_auth">Authorized Worldwide Retailer</span>
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <i data-feather="activity" class="text-emerald-500 w-6 h-6"></i>
+                <span class="text-2xl font-black tracking-tighter text-white">ARTRO<span class="text-emerald-500">NOL</span></span>
             </div>
             
-            <div class="mb-8 text-gray-500 text-xs space-y-1">
-                <p>Support: support@artronol.com | +1(800) 123-4567</p>
-            </div>
+            <p class="text-sm mb-8" data-translate="footer_copy">&copy; 2026 Artronol Official. Todos os direitos reservados.</p>
             
-            <div class="flex justify-center flex-wrap gap-4 md:gap-8 mb-8 text-xs font-medium uppercase tracking-widest">
-                <button onclick="openModal()" class="hover:text-sky-400 transition-colors" data-translate="link_privacy">Privacy Policy</button>
-                <button onclick="openModal()" class="hover:text-sky-400 transition-colors" data-translate="link_terms">Terms of Service</button>
-                <button onclick="openModal()" class="hover:text-sky-400 transition-colors" data-translate="link_contact">Contact Us</button>
+            <div class="flex justify-center flex-wrap gap-8 mb-12 text-xs font-bold uppercase tracking-widest text-gray-300">
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_privacy">Privacidade</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_terms">Termos</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_contact">Contacto</button>
             </div>
 
-            <!-- Enhanced Disclaimer -->
-            <div class="border-t border-gray-800 pt-6 mt-4 text-[11px] text-gray-500 max-w-3xl mx-auto space-y-3 leading-relaxed">
-                <p data-translate="disclaimer_1">This site is not a part of the Google™ website or Google Inc. This site is NOT endorsed by Google™ in any way.</p>
-                <p data-translate="disclaimer_3">
-                    *Results may vary. The information provided is for educational purposes and is not intended to substitute for professional medical advice. Always consult with a healthcare professional before starting any new supplement regimen.
-                </p>
-                <p class="text-gray-600">
-                    *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
-                </p>
+            <div class="border-t border-gray-800 pt-8 text-[11px] leading-relaxed max-w-4xl mx-auto space-y-4 opacity-50 text-center">
+                <p data-translate="disclaimer_1">Este site não faz parte do site do Google™ ou da Google Inc. Este site NÃO é endossado pelo Google™ de forma alguma.</p>
+                <p data-translate="disclaimer_3">*Os resultados podem variar. As informações fornecidas têm fins educativos e não pretendem substituir o aconselhamento médico profissional.</p>
+                <p>*Estas declarações não foram avaliadas pela Food and Drug Administration. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença.</p>
             </div>
         </div>
     </footer>
 
     <!-- POLICY MODAL -->
-    <div id="policy-modal" class="fixed inset-0 z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-gray-900/80 backdrop-blur-sm transition-opacity" onclick="closeModal()"></div>
-        <div class="fixed inset-0 z-10 overflow-y-auto">
-            <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:w-full sm:max-w-2xl flex flex-col border border-gray-100">
-                    <div class="bg-white px-6 py-4 border-b border-gray-100 flex justify-between items-center">
-                        <h3 class="text-lg font-bold text-gray-900" id="modal-title" data-translate="modal_title">Information</h3>
-                        <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 transition-colors"><i data-feather="x"></i></button>
-                    </div>
-                    <div class="p-6 overflow-y-auto max-h-[60vh] text-gray-600 text-sm">
-                        <h2 class="font-bold text-gray-900 mb-2">Terms & Privacy</h2>
-                        <p class="mb-4">By using this site, you agree to our standard terms. Artronol is a dietary supplement. Please check the label for ingredients before use to avoid allergies.</p>
-                        <h2 class="font-bold text-gray-900 mb-2">Return Policy</h2>
-                        <p>We offer a 90-day money-back guarantee. If you are not satisfied with your results, contact support for instructions.</p>
-                    </div>
-                    <div class="bg-gray-50 px-6 py-4 flex justify-end">
-                        <button onclick="closeModal()" class="bg-gray-900 text-white px-6 py-2 rounded-lg font-bold text-sm" data-translate="btn_close">Close</button>
-                    </div>
+    <div id="policy-modal" class="fixed inset-0 z-50 hidden" onclick="closeModal()">
+        <div class="fixed inset-0 bg-gray-900/95 backdrop-blur-sm"></div>
+        <div class="fixed inset-0 flex items-center justify-center p-4">
+            <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl" onclick="event.stopPropagation()">
+                <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors"><i data-feather="x"></i></button>
+                <h3 class="text-xl font-black mb-6 uppercase tracking-tight" data-translate="modal_title">Informação Legal</h3>
+                <div class="text-gray-600 text-sm space-y-4 max-h-[50vh] overflow-y-auto pr-2 leading-relaxed text-left">
+                    <p class="font-bold text-gray-900">Sobre o Produto</p>
+                    <p>Artronol é um suplemento alimentar de alta qualidade formulado com ingredientes premium. A eficácia pode variar de pessoa para pessoa dependendo de fatores biológicos individuais.</p>
+                    <p class="font-bold text-gray-900">Garantia de 90 Dias</p>
+                    <p>A nossa garantia cobre a sua primeira experiência com o produto. Caso não sinta os benefícios esperados, pode solicitar o reembolso total do valor do produto dentro de 90 dias após a receção.</p>
+                </div>
+                <div class="mt-8 flex justify-end">
+                    <button onclick="closeModal()" class="bg-gray-900 text-white px-10 py-3 rounded-xl font-bold hover:bg-black transition-all active:scale-95" data-translate="btn_close">Fechar</button>
                 </div>
             </div>
         </div>
@@ -280,58 +239,39 @@
     <!-- TRANSLATION SCRIPT -->
     <script>
         const translations = {
-            'en': {
-                'choose_country': 'Choose your country:',
-                'btn_pt': 'Portugal',
-                'btn_es': 'Spain'
-            },
             'pt': {
+                'rating_text': '⭐ 4.9/5 Avaliação de Clientes',
                 'discount_badge': 'PROMOÇÃO: 70% DE DESCONTO HOJE',
-                'hero_title': 'Mova-se Livremente Novamente <br class="hidden sm:block">& Sinta-se Melhor',
-                'hero_desc': 'Artronol é a fórmula de suporte avançada projetada para ajudar a manter a flexibilidade das articulações e aliviar o desconforto diário.',
-                'bullet_1': 'Suporta Flexibilidade e Conforto Articular',
-                'bullet_2': 'Promove Mobilidade para um Estilo de Vida Ativo',
-                'bullet_3': 'Garantia de Satisfação de 90 Dias',
-                'choose_country': 'Escolha o seu país:',
+                'hero_title': 'Volte a Mover-se com Confiança <br class="hidden sm:block">& Recupere o Seu Conforto Diário',
+                'hero_desc': '<p>Artronol é a fórmula avançada desenvolvida para apoiar a saúde das articulações, ajudar a manter a mobilidade natural e reduzir o desconforto associado ao desgaste do dia a dia.</p><p class="opacity-80 text-sm md:text-base">Ideal para quem sente rigidez, tensionamento ou limitações nos joelhos, costas, ombros e mãos — e quer voltar a sentir-se ativo sem depender constantemente de soluções temporárias.</p>',
+                'bullet_1': '<p class="text-gray-900 font-bold text-base">Apoia a Flexibilidade e o Conforto Articular</p><p class="text-gray-600 text-sm mt-1 leading-snug">Ajuda a manter articulações mais leves e funcionais, contribuindo para movimentos mais naturais.</p>',
+                'bullet_2': '<p class="text-gray-900 font-bold text-base">Favorece Mobilidade para um Estilo de Vida Ativo</p><p class="text-gray-600 text-sm mt-1 leading-snug">Perfeito para quem deseja continuar a caminhar, trabalhar e aproveitar o dia sem limitações constantes.</p>',
+                'bullet_3': '<p class="text-gray-900 font-bold text-base">Garantia de Satisfação de 90 Dias</p><p class="text-gray-600 text-sm mt-1 leading-snug">Experimente com tranquilidade. Se não estiver satisfeito, pode solicitar reembolso dentro do prazo da garantia.</p>',
+                'choose_country': 'Selecione o seu país para encomendar:',
                 'btn_pt': 'Portugal',
-                'btn_es': 'Espanha',
-                'footer_copy': '&copy; 2026 Artronol Oficial. Todos os direitos reservados.',
-                'footer_auth': 'Revendedor Mundial Autorizado',
+                'btn_es': 'España',
+                'footer_copy': '&copy; 2026 Artronol Official. Todos os direitos reservados.',
                 'link_privacy': 'Política de Privacidade',
                 'link_terms': 'Termos de Serviço',
-                'link_contact': 'Fale Conosco',
-                'disclaimer_1': 'Este site não faz parte do Google™ ou Google Inc.',
-                'disclaimer_3': '*Os resultados podem variar. Consulte um profissional de saúde antes de iniciar qualquer suplementação.',
+                'link_contact': 'Contacte-nos',
                 'modal_title': 'Informação Legal',
                 'btn_close': 'Fechar',
                 'meta_title': 'Artronol Oficial | Mobilidade e Conforto Avançado'
             },
             'es': {
-                'discount_badge': 'PROMO: 70% DE DESCUENTO HOY',
-                'hero_title': 'Muévete Libremente de Nuevo <br class="hidden sm:block">& Siéntete Mejor',
-                'hero_desc': 'Artronol es la fórmula de soporte avanzada diseñada para ayudar a mantener la flexibilidad de las articulaciones y aliviar las molestias.',
-                'bullet_1': 'Apoya la flexibilidad y el confort articular',
-                'bullet_2': 'Promueve la movilidad para un estilo de vida activo',
-                'bullet_3': 'Garantía de satisfacción de 90 días',
-                'choose_country': 'Elige tu país:',
+                'rating_text': '⭐ 4.9/5 Valoración de Clientes',
+                'discount_badge': 'PROMOCIÓN: 70% DE DESCUENTO HOJE',
+                'hero_title': 'Muévete con Confianza de Nuevo <br class="hidden sm:block">& Recupera tu Confort Diario',
+                'choose_country': 'Selecciona tu país para pedir:',
                 'btn_pt': 'Portugal',
                 'btn_es': 'España',
-                'footer_copy': '&copy; 2026 Artronol Oficial. Todos los derechos reservados.',
-                'footer_auth': 'Distribuidor Mundial Autorizado',
-                'link_privacy': 'Privacidad',
-                'link_terms': 'Términos',
-                'link_contact': 'Contacto',
-                'disclaimer_1': 'Este sitio no es parte de Google™.',
-                'disclaimer_3': '*Los resultados pueden variar. Consulte a un médico antes de usar.',
-                'modal_title': 'Información Legal',
-                'btn_close': 'Cerrar',
-                'meta_title': 'Artronol Oficial | Movilidad y Confort'
+                'meta_title': 'Artronol Oficial | Movilidad y Confort Avanzado'
             }
         };
 
         document.addEventListener('DOMContentLoaded', () => {
             const userLang = (navigator.language || navigator.userLanguage).substring(0, 2).toLowerCase();
-            let activeLang = translations[userLang] ? userLang : 'en';
+            let activeLang = translations[userLang] ? userLang : 'pt';
 
             document.querySelectorAll('[data-translate]').forEach(el => {
                 const key = el.getAttribute('data-translate');
@@ -340,25 +280,18 @@
                     else el.innerHTML = translations[activeLang][key];
                 }
             });
-            document.documentElement.lang = activeLang;
-            
             feather.replace();
             reveal();
         });
 
         function reveal() {
-            const reveals = document.querySelectorAll(".reveal");
-            reveals.forEach(el => {
-                const windowHeight = window.innerHeight;
-                const elementTop = el.getBoundingClientRect().top;
-                if (elementTop < windowHeight - 50) el.classList.add("active");
+            document.querySelectorAll(".reveal").forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 50) el.classList.add("active");
             });
         }
         window.addEventListener("scroll", reveal);
-
-        const modal = document.getElementById('policy-modal');
-        function openModal() { modal.classList.remove('hidden'); document.body.classList.add('modal-open'); }
-        function closeModal() { modal.classList.add('hidden'); document.body.classList.remove('modal-open'); }
+        function openModal() { document.getElementById('policy-modal').classList.remove('hidden'); }
+        function closeModal() { document.getElementById('policy-modal').classList.add('hidden'); }
     </script>
 </body>
 </html>
