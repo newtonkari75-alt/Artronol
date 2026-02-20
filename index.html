@@ -33,7 +33,8 @@
         }
         .hero-section-bg {
             background-color: #F3F7FA;
-            background-image: linear-gradient(rgba(243, 247, 250, 0.65), rgba(243, 247, 250, 0.65)), url('images/artronol1.jpg');
+            /* Reduzi a opacidade da sobreposição de 0.65 para 0.35 para a imagem aparecer muito mais */
+            background-image: linear-gradient(rgba(243, 247, 250, 0.35), rgba(243, 247, 250, 0.35)), url('images/artronol1.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -47,7 +48,7 @@
             transform: translateY(0);
         }
         .glass-panel {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.9);
         }
@@ -63,8 +64,9 @@
         .btn-green-gradient:active {
             transform: translateY(-1px);
         }
+        /* Sombras reforçadas para garantir legibilidade com o fundo mais visível */
         .text-shadow-sm {
-            text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+            text-shadow: 0 2px 4px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.5);
         }
     </style>
 </head>
@@ -77,7 +79,7 @@
                 <div class="bg-emerald-600 rounded-lg p-1">
                    <i data-feather="activity" class="text-white w-5 h-5"></i>
                 </div>
-                <span class="text-xl font-black tracking-tighter text-gray-900">ARTRO<span class="text-emerald-600">NOL</span></span>
+                <span class="text-xl font-black tracking-tighter text-gray-900 uppercase">Artronol</span>
             </div>
         </div>
     </header>
@@ -92,7 +94,7 @@
                     <div class="reveal flex flex-col items-center md:items-start text-center md:text-left">
                         
                         <!-- Badge -->
-                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm">
+                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm border border-white">
                             <span class="font-bold text-sm" data-translate="rating_text">⭐ 4.9/5 Avaliação de Clientes</span>
                             <div class="w-px h-4 bg-gray-300"></div>
                             <span class="text-xs font-bold uppercase tracking-wide text-emerald-700" data-translate="discount_badge">PROMOÇÃO: 70% DE DESCONTO HOJE</span>
@@ -106,11 +108,11 @@
                         <!-- Description -->
                         <div class="text-base md:text-lg mb-8 text-gray-800 leading-relaxed max-w-xl font-medium text-shadow-sm space-y-4" data-translate="hero_desc">
                             <p>Artronol é a fórmula avançada desenvolvida para apoiar a saúde das articulações, ajudar a manter a mobilidade natural e reduzir o desconforto associado ao desgaste do dia a dia.</p>
-                            <p class="opacity-80 text-sm md:text-base">Ideal para quem sente rigidez, tensão ou limitações nos joelhos, costas, ombros e mãos — e quer voltar a sentir-se ativo sem depender constantemente de soluções temporárias.</p>
+                            <p class="opacity-90 text-sm md:text-base italic">Ideal para quem sente rigidez, tensionamento ou limitações nos joelhos, costas, ombros e mãos — e quer voltar a sentir-se ativo sem depender constantemente de soluções temporárias.</p>
                         </div>
                         
                         <!-- Benefits Box -->
-                        <div class="w-full max-w-lg glass-panel rounded-2xl p-6 mb-10 text-left shadow-md">
+                        <div class="w-full max-w-lg glass-panel rounded-2xl p-6 mb-10 text-left shadow-md border border-white">
                             <ul class="space-y-6">
                                 <li class="flex items-start">
                                     <div class="bg-emerald-500 rounded-full p-1 mr-4 mt-0.5 flex-shrink-0">
@@ -146,14 +148,12 @@
                         <div class="w-full max-w-md flex flex-col gap-4">
                             <p class="font-bold text-gray-900 uppercase tracking-widest text-xs opacity-75 mb-1 text-center md:text-left" data-translate="choose_country">Selecione o seu país para encomendar:</p>
                             
-                            <!-- Botão Portugal com Bandeira no lugar da Sigla -->
                             <a href="https://w9qbu.doctormedved.com/l" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
                                 <div class="flex items-center gap-5">
-                                    <!-- Bandeira 🇵🇹 em destaque -->
                                     <span class="text-5xl filter drop-shadow-md group-hover:scale-110 transition-transform duration-300">🇵🇹</span>
                                     <div class="text-left">
-                                        <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest">Enviar para</span>
-                                        <span class="text-xl font-black" data-translate="btn_pt">Portugal</span>
+                                        <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest" data-translate="order_pt">Enviar para</span>
+                                        <span class="text-xl font-black">Portugal</span>
                                     </div>
                                 </div>
                                 <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors shadow-inner">
@@ -161,14 +161,12 @@
                                 </div>
                             </a>
 
-                            <!-- Botão Espanha com Bandeira no lugar da Sigla -->
                             <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
                                 <div class="flex items-center gap-5">
-                                    <!-- Bandeira 🇪🇸 em destaque -->
                                     <span class="text-5xl filter drop-shadow-md group-hover:scale-110 transition-transform duration-300">🇪🇸</span>
                                     <div class="text-left">
-                                        <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest">Enviar a</span>
-                                        <span class="text-xl font-black" data-translate="btn_es">España</span>
+                                        <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest" data-translate="order_es">Enviar a</span>
+                                        <span class="text-xl font-black">España</span>
                                     </div>
                                 </div>
                                 <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors shadow-inner">
@@ -177,8 +175,8 @@
                             </a>
                             
                             <div class="mt-4 flex items-center justify-center md:justify-start gap-6 text-[10px] font-bold text-gray-500 uppercase tracking-wider opacity-70">
-                                <span class="flex items-center gap-1.5"><i data-feather="truck" class="w-3.5 h-3.5"></i> Envio em 24/48h</span>
-                                <span class="flex items-center gap-1.5"><i data-feather="shield" class="w-3.5 h-3.5"></i> Pagamento Seguro</span>
+                                <span class="flex items-center gap-1.5"><i data-feather="truck" class="w-3.5 h-3.5"></i> <span data-translate="shipping_info">Envio em 24/48h</span></span>
+                                <span class="flex items-center gap-1.5"><i data-feather="shield" class="w-3.5 h-3.5"></i> <span data-translate="payment_info">Pagamento Seguro</span></span>
                             </div>
                         </div>
                     </div>
@@ -197,15 +195,15 @@
         <div class="container mx-auto px-4 text-center">
             <div class="flex items-center justify-center gap-2 mb-6">
                 <i data-feather="activity" class="text-emerald-500 w-6 h-6"></i>
-                <span class="text-2xl font-black tracking-tighter text-white">ARTRO<span class="text-emerald-500">NOL</span></span>
+                <span class="text-2xl font-black tracking-tighter text-white uppercase">Artronol</span>
             </div>
             
             <p class="text-sm mb-8" data-translate="footer_copy">&copy; 2026 Artronol Official. Todos os direitos reservados.</p>
             
             <div class="flex justify-center flex-wrap gap-8 mb-12 text-xs font-bold uppercase tracking-widest text-gray-300">
-                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_privacy">Privacidade</button>
-                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_terms">Termos</button>
-                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_contact">Contacto</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_privacy">Política de Privacidade</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_terms">Termos de Serviço</button>
+                <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_contact">Contacte-nos</button>
             </div>
 
             <div class="border-t border-gray-800 pt-8 text-[11px] leading-relaxed max-w-4xl mx-auto space-y-4 opacity-50 text-center">
@@ -243,13 +241,15 @@
                 'rating_text': '⭐ 4.9/5 Avaliação de Clientes',
                 'discount_badge': 'PROMOÇÃO: 70% DE DESCONTO HOJE',
                 'hero_title': 'Volte a Mover-se com Confiança <br class="hidden sm:block">& Recupere o Seu Conforto Diário',
-                'hero_desc': '<p>Artronol é a fórmula avançada desenvolvida para apoiar a saúde das articulações, ajudar a manter a mobilidade natural e reduzir o desconforto associado ao desgaste do dia a dia.</p><p class="opacity-80 text-sm md:text-base">Ideal para quem sente rigidez, tensionamento ou limitações nos joelhos, costas, ombros e mãos — e quer voltar a sentir-se ativo sem depender constantemente de soluções temporárias.</p>',
+                'hero_desc': '<p>Artronol é a fórmula avançada desenvolvida para apoiar a saúde das articulações, ajudar a manter a mobilidade natural e reduzir o desconforto associado ao desgaste do dia a dia.</p><p class="opacity-90 text-sm md:text-base italic">Ideal para quem sente rigidez, tensionamento ou limitações nos joelhos, costas, ombros e mãos — e quer voltar a sentir-se ativo sem depender constantemente de soluções temporárias.</p>',
                 'bullet_1': '<p class="text-gray-900 font-bold text-base">Apoia a Flexibilidade e o Conforto Articular</p><p class="text-gray-600 text-sm mt-1 leading-snug">Ajuda a manter articulações mais leves e funcionais, contribuindo para movimentos mais naturais.</p>',
                 'bullet_2': '<p class="text-gray-900 font-bold text-base">Favorece Mobilidade para um Estilo de Vida Ativo</p><p class="text-gray-600 text-sm mt-1 leading-snug">Perfeito para quem deseja continuar a caminhar, trabalhar e aproveitar o dia sem limitações constantes.</p>',
                 'bullet_3': '<p class="text-gray-900 font-bold text-base">Garantia de Satisfação de 90 Dias</p><p class="text-gray-600 text-sm mt-1 leading-snug">Experimente com tranquilidade. Se não estiver satisfeito, pode solicitar reembolso dentro do prazo da garantia.</p>',
                 'choose_country': 'Selecione o seu país para encomendar:',
-                'btn_pt': 'Portugal',
-                'btn_es': 'España',
+                'order_pt': 'Enviar para',
+                'order_es': 'Enviar para',
+                'shipping_info': 'Envio em 24/48h',
+                'payment_info': 'Pagamento Seguro',
                 'footer_copy': '&copy; 2026 Artronol Official. Todos os direitos reservados.',
                 'link_privacy': 'Política de Privacidade',
                 'link_terms': 'Termos de Serviço',
@@ -260,18 +260,30 @@
             },
             'es': {
                 'rating_text': '⭐ 4.9/5 Valoración de Clientes',
-                'discount_badge': 'PROMOCIÓN: 70% DE DESCUENTO HOJE',
+                'discount_badge': 'PROMOCIÓN: 70% DE DESCUENTO HOY',
                 'hero_title': 'Muévete con Confianza de Nuevo <br class="hidden sm:block">& Recupera tu Confort Diario',
+                'hero_desc': '<p>Artronol es la fórmula avanzada diseñada para apoyar la salud articular, ayudar a mantener la movilidad natural y reducir las molestias.</p>',
+                'bullet_1': '<p class="text-gray-900 font-bold text-base">Apoya la flexibilidad y el confort articular</p>',
+                'bullet_2': '<p class="text-gray-900 font-bold text-base">Favorece la movilidad para un estilo activo</p>',
+                'bullet_3': '<p class="text-gray-900 font-bold text-base">Garantía de satisfacción de 90 días</p>',
                 'choose_country': 'Selecciona tu país para pedir:',
-                'btn_pt': 'Portugal',
-                'btn_es': 'España',
+                'order_pt': 'Enviar a',
+                'order_es': 'Enviar a',
+                'shipping_info': 'Envío en 24/48h',
+                'payment_info': 'Pago Seguro',
+                'footer_copy': '&copy; 2026 Artronol Oficial. Todos los derechos reservados.',
+                'link_privacy': 'Política de Privacidad',
+                'link_terms': 'Términos de Servicio',
+                'link_contact': 'Contáctenos',
+                'modal_title': 'Información Legal',
+                'btn_close': 'Cerrar',
                 'meta_title': 'Artronol Oficial | Movilidad y Confort Avanzado'
             }
         };
 
         document.addEventListener('DOMContentLoaded', () => {
             const userLang = (navigator.language || navigator.userLanguage).substring(0, 2).toLowerCase();
-            let activeLang = translations[userLang] ? userLang : 'pt';
+            let activeLang = userLang === 'es' ? 'es' : 'pt';
 
             document.querySelectorAll('[data-translate]').forEach(el => {
                 const key = el.getAttribute('data-translate');
@@ -280,6 +292,7 @@
                     else el.innerHTML = translations[activeLang][key];
                 }
             });
+            document.documentElement.lang = activeLang;
             feather.replace();
             reveal();
         });
