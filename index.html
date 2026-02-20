@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://official.artronol.shop/">
     <link rel="alternate" hreflang="x-default" href="https://official.artronol.shop/">
     
-    <title data-translate="meta_title">Artronol Oficial | Recupere o Seu Conforto Diário</title>
+    <title data-translate="meta_title">Artronol | Distribuidor Autorizado - Conforto e Mobilidade</title>
     <meta name="description" content="Fórmula avançada Artronol para o conforto das articulações e mobilidade natural. 70% de desconto hoje.">
     
     <!-- Open Graph -->
@@ -33,7 +33,6 @@
         }
         .hero-section-bg {
             background-color: #F3F7FA;
-            /* Opacidade reduzida para o fundo aparecer bem */
             background-image: linear-gradient(rgba(243, 247, 250, 0.35), rgba(243, 247, 250, 0.35)), url('images/artronol1.jpg');
             background-size: cover;
             background-position: center;
@@ -61,18 +60,21 @@
             box-shadow: 0 15px 25px -5px rgba(16, 185, 129, 0.4);
             filter: brightness(1.08);
         }
-        .btn-green-gradient:active {
-            transform: translateY(-1px);
-        }
         .text-shadow-sm {
             text-shadow: 0 2px 4px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.5);
         }
-        /* Estilo para as bandeiras em imagem para evitar o erro de letras */
         .flag-img {
             width: 54px;
             height: auto;
             border-radius: 4px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        /* FAQ Accordion Custom Styles */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary svg {
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -99,14 +101,12 @@
                     <!-- Text Content (Esquerda) -->
                     <div class="reveal flex flex-col items-center md:items-start text-center md:text-left">
                         
-                        <!-- Badge -->
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm border border-white">
                             <span class="font-bold text-sm" data-translate="rating_text">⭐ 4.9/5 Avaliação de Clientes</span>
                             <div class="w-px h-4 bg-gray-300"></div>
                             <span class="text-xs font-bold uppercase tracking-wide text-emerald-700" data-translate="discount_badge">PROMOÇÃO: 70% DE DESCONTO HOJE</span>
                         </div>
 
-                        <!-- H1 Title -->
                         <h1 class="text-3xl sm:text-5xl font-black mb-10 leading-tight tracking-tight text-gray-900 text-shadow-sm" data-translate="hero_title">
                             Volte a Mover-se com Confiança <br class="hidden sm:block">& Recupere o Seu Conforto Diário
                         </h1>
@@ -148,7 +148,6 @@
                         <div class="w-full max-w-md flex flex-col gap-4">
                             <p class="font-bold text-gray-900 uppercase tracking-widest text-xs opacity-75 mb-1 text-center md:text-left" data-translate="choose_country">Selecione o seu país para encomendar:</p>
                             
-                            <!-- Botão Portugal com Imagem Real da Bandeira -->
                             <a href="https://w9qbu.doctormedved.com/l" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
                                 <div class="flex items-center gap-5">
                                     <img src="https://flagcdn.com/w160/pt.png" alt="Portugal" class="flag-img group-hover:scale-110 transition-transform duration-300">
@@ -162,7 +161,6 @@
                                 </div>
                             </a>
 
-                            <!-- Botão Espanha com Imagem Real da Bandeira -->
                             <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
                                 <div class="flex items-center gap-5">
                                     <img src="https://flagcdn.com/w160/es.png" alt="Espanha" class="flag-img group-hover:scale-110 transition-transform duration-300">
@@ -175,18 +173,66 @@
                                     <i data-feather="chevron-right" class="w-6 h-6"></i>
                                 </div>
                             </a>
-                            
-                            <div class="mt-4 flex items-center justify-center md:justify-start gap-6 text-[10px] font-bold text-gray-500 uppercase tracking-wider opacity-70">
-                                <span class="flex items-center gap-1.5"><i data-feather="truck" class="w-3.5 h-3.5"></i> <span data-translate="shipping_info">Envio em 24/48h</span></span>
-                                <span class="flex items-center gap-1.5"><i data-feather="shield" class="w-3.5 h-3.5"></i> <span data-translate="payment_info">Pagamento Seguro</span></span>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- Product Image (Direita) -->
+                    <!-- Product Image -->
                     <div class="reveal flex justify-center items-center">
                         <img src="images/artronol.png" width="550" height="550" alt="Artronol Premium" class="w-full max-w-md h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION (Minimalist Accordion) -->
+        <section class="py-16 bg-gray-50 border-t border-gray-100">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-2xl md:text-3xl font-black text-center mb-10 text-gray-900" data-translate="faq_title">Perguntas Frequentes</h2>
+                
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 pr-4" data-translate="faq_q1">Quais são os prazos de entrega?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a1">
+                            Normalmente, o serviço de correio realiza a entrega num prazo máximo de 2-3 dias úteis.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 pr-4" data-translate="faq_q2">Posso pagar diretamente no ato da entrega?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a2">
+                            Sim! Para garantir maior comodidade e segurança, oferecemos o serviço de Pagamento Contra Reembolso. Pode pagar diretamente ao estafeta quando o produto chegar a sua casa.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 pr-4" data-translate="faq_q3">Os meus dados estão seguros?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a3">
+                            Absolutamente sim. Se observar a barra de endereço, verá o símbolo do cadeado e o protocolo HTTPS. Isso garante que os seus dados são enviados com total segurança para os nossos operadores.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer list-none">
+                            <span class="font-bold text-gray-900 pr-4" data-translate="faq_q4">Posso obter mais informações?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a4">
+                            Com certeza! Se ainda não completou o pedido e tem dúvidas, ao preencher o formulário, um dos nossos operadores entrará em contacto por telefone para esclarecer tudo antes de finalizar a compra.
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -200,7 +246,8 @@
                 <span class="text-2xl font-black tracking-tighter text-white uppercase">Artronol</span>
             </div>
             
-            <p class="text-sm mb-8" data-translate="footer_copy">&copy; 2026 Artronol Official. Todos os direitos reservados.</p>
+            <!-- FOOTER COPY UPDATED TO DISTRIBUIDOR AUTORIZADO -->
+            <p class="text-sm mb-8" data-translate="footer_copy">&copy; 2026 Artronol - Distribuidor Autorizado. Todos os direitos reservados.</p>
             
             <div class="flex justify-center flex-wrap gap-8 mb-12 text-xs font-bold uppercase tracking-widest text-gray-300">
                 <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_privacy">Política de Privacidade</button>
@@ -208,9 +255,8 @@
                 <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_contact">Contacte-nos</button>
             </div>
 
-            <div class="border-t border-gray-800 pt-8 text-[11px] max-w-4xl mx-auto space-y-4 opacity-50 text-center">
+            <div class="border-t border-gray-800 pt-8 text-[11px] leading-relaxed max-w-4xl mx-auto opacity-50 text-center">
                 <p data-translate="disclaimer_1">Este site não faz parte do site do Google™ ou da Google Inc. Este site NÃO é endossado pelo Google™ de forma alguma.</p>
-                <p data-translate="disclaimer_3">*Os resultados podem variar. Consulte sempre um profissional de saúde.</p>
             </div>
         </div>
     </footer>
@@ -223,7 +269,7 @@
                 <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors"><i data-feather="x"></i></button>
                 <h3 class="text-xl font-black mb-6 uppercase tracking-tight" data-translate="modal_title">Informação Legal</h3>
                 <div class="text-gray-600 text-sm space-y-4 max-h-[50vh] overflow-y-auto pr-2 leading-relaxed text-left">
-                    <p>Artronol é um suplemento alimentar de alta qualidade. A eficácia pode variar de pessoa para pessoa. Oferecemos uma garantia de satisfação de 90 dias.</p>
+                    <p>Artronol é um suplemento alimentar de alta qualidade formulado com ingredientes premium. A eficácia pode variar de pessoa para pessoa dependendo de fatores biológicos individuais.</p>
                 </div>
                 <div class="mt-8 flex justify-end">
                     <button onclick="closeModal()" class="bg-gray-900 text-white px-10 py-3 rounded-xl font-bold hover:bg-black transition-all active:scale-95" data-translate="btn_close">Fechar</button>
@@ -245,15 +291,17 @@
                 'choose_country': 'Selecione o seu país para encomendar:',
                 'order_pt': 'Enviar para',
                 'order_es': 'Enviar para',
-                'shipping_info': 'Envio em 24/48h',
-                'payment_info': 'Pagamento Seguro',
-                'footer_copy': '&copy; 2026 Artronol Official. Todos os direitos reservados.',
-                'link_privacy': 'Política de Privacidade',
-                'link_terms': 'Termos de Serviço',
-                'link_contact': 'Contacte-nos',
-                'modal_title': 'Informação Legal',
-                'btn_close': 'Fechar',
-                'meta_title': 'Artronol Oficial | Mobilidade e Conforto Avançado'
+                'faq_title': 'Perguntas Frequentes',
+                'faq_q1': 'Quais são os prazos de entrega?',
+                'faq_a1': 'Normalmente, o serviço de correio realiza a entrega num prazo máximo de 2-3 dias úteis.',
+                'faq_q2': 'Posso pagar diretamente no ato da entrega?',
+                'faq_a2': 'Sim! Para garantir maior comodidade e segurança, oferecemos o serviço de Pagamento Contra Reembolso. Pode pagar diretamente ao estafeta quando o produto chegar a sua casa.',
+                'faq_q3': 'Os meus dados estão seguros?',
+                'faq_a3': 'Absolutamente sim. Se observar a barra de endereço, verá o símbolo do cadeado e o protocolo HTTPS. Isso garante que os seus dados são enviados com total segurança para os nossos operadores.',
+                'faq_q4': 'Posso obter mais informações?',
+                'faq_a4': 'Com certeza! Se ainda não completou o pedido e tem dúvidas, ao preencher o formulário, um dos nossos operadores entrará em contacto por telefone para esclarecer tudo antes de finalizar a compra.',
+                'footer_copy': '&copy; 2026 Artronol - Distribuidor Autorizado. Todos os direitos reservados.',
+                'meta_title': 'Artronol | Distribuidor Autorizado - Conforto e Mobilidade'
             },
             'es': {
                 'rating_text': '⭐ 4.9/5 Valoración de Clientes',
@@ -265,15 +313,17 @@
                 'choose_country': 'Selecciona tu país para pedir:',
                 'order_pt': 'Enviar a',
                 'order_es': 'Enviar a',
-                'shipping_info': 'Envío en 24/48h',
-                'payment_info': 'Pago Seguro',
-                'footer_copy': '&copy; 2026 Artronol Official. Todos los derechos reservados.',
-                'link_privacy': 'Política de Privacidad',
-                'link_terms': 'Términos de Serviço',
-                'link_contact': 'Contáctenos',
-                'modal_title': 'Información Legal',
-                'btn_close': 'Cerrar',
-                'meta_title': 'Artronol Oficial | Movilidad y Confort Avanzado'
+                'faq_title': 'Preguntas Frecuentes',
+                'faq_q1': '¿Cuáles son los plazos de entrega?',
+                'faq_a1': 'Normalmente, el servicio de mensajería realiza la entrega en un plazo máximo de 2-3 días.',
+                'faq_q2': '¿Puedo pagar directamente contra entrega?',
+                'faq_a2': 'Sí, para garantizar una mayor comodidad y seguridad ofrecemos Pago Contra Reembolso, ¡puedes pagar directamente al mensajero cuando llegue a tu casa!',
+                'faq_q3': '¿Están seguros mis datos?',
+                'faq_a3': 'Absolutamente sí, si observa en la parte superior izquierda notará el símbolo del candado con https, esto garantiza que sus datos se envían con total seguridad a nuestros operadores.',
+                'faq_q4': '¿Puedo tener más información?',
+                'faq_a4': '¡Por supuesto! Si aún no ha completado el formulario de pedido y no está seguro de qué hacer, al completarlo, uno de nuestros operadores lo contactará por teléfono para responder a todas sus preguntas.',
+                'footer_copy': '&copy; 2026 Artronol - Distribuidor Autorizado. Todos los derechos reservados.',
+                'meta_title': 'Artronol | Distribuidor Autorizado - Movilidad y Confort'
             }
         };
 
