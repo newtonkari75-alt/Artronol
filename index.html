@@ -33,6 +33,7 @@
         }
         .hero-section-bg {
             background-color: #F3F7FA;
+            /* Opacidade reduzida para o fundo aparecer bem */
             background-image: linear-gradient(rgba(243, 247, 250, 0.35), rgba(243, 247, 250, 0.35)), url('images/artronol1.jpg');
             background-size: cover;
             background-position: center;
@@ -66,11 +67,12 @@
         .text-shadow-sm {
             text-shadow: 0 2px 4px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.5);
         }
-        /* Garantir que as bandeiras apareçam grandes e sem texto residual */
-        .flag-icon {
-            font-size: 3.5rem;
-            line-height: 1;
-            display: inline-block;
+        /* Estilo para as bandeiras em imagem para evitar o erro de letras */
+        .flag-img {
+            width: 54px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -94,7 +96,7 @@
             <div class="container mx-auto px-4 sm:px-6 py-12 md:py-20">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 items-center">
                     
-                    <!-- Text Content -->
+                    <!-- Text Content (Esquerda) -->
                     <div class="reveal flex flex-col items-center md:items-start text-center md:text-left">
                         
                         <!-- Badge -->
@@ -146,32 +148,30 @@
                         <div class="w-full max-w-md flex flex-col gap-4">
                             <p class="font-bold text-gray-900 uppercase tracking-widest text-xs opacity-75 mb-1 text-center md:text-left" data-translate="choose_country">Selecione o seu país para encomendar:</p>
                             
-                            <!-- Botão Portugal com Bandeira (Substitui texto PT) -->
-                            <a href="https://w9qbu.doctormedved.com/l" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg overflow-hidden">
-                                <div class="flex items-center gap-6">
-                                    <!-- Apenas a Bandeira 🇵🇹 -->
-                                    <span class="flag-icon filter drop-shadow-md group-hover:scale-110 transition-transform duration-300">🇵🇹</span>
+                            <!-- Botão Portugal com Imagem Real da Bandeira -->
+                            <a href="https://w9qbu.doctormedved.com/l" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
+                                <div class="flex items-center gap-5">
+                                    <img src="https://flagcdn.com/w160/pt.png" alt="Portugal" class="flag-img group-hover:scale-110 transition-transform duration-300">
                                     <div class="text-left">
                                         <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest" data-translate="order_pt">Enviar para</span>
                                         <span class="text-xl font-black">Portugal</span>
                                     </div>
                                 </div>
-                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors shadow-inner">
+                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors">
                                     <i data-feather="chevron-right" class="w-6 h-6"></i>
                                 </div>
                             </a>
 
-                            <!-- Botão Espanha com Bandeira (Substitui texto ES) -->
-                            <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg overflow-hidden">
-                                <div class="flex items-center gap-6">
-                                    <!-- Apenas a Bandeira 🇪🇸 -->
-                                    <span class="flag-icon filter drop-shadow-md group-hover:scale-110 transition-transform duration-300">🇪🇸</span>
+                            <!-- Botão Espanha com Imagem Real da Bandeira -->
+                            <a href="https://3bjul.doctorfoxick.com/l/?sub1={gclid}" class="group flex items-center justify-between btn-green-gradient text-white px-8 py-5 rounded-2xl shadow-lg">
+                                <div class="flex items-center gap-5">
+                                    <img src="https://flagcdn.com/w160/es.png" alt="Espanha" class="flag-img group-hover:scale-110 transition-transform duration-300">
                                     <div class="text-left">
                                         <span class="block text-[10px] uppercase font-bold opacity-80 tracking-widest" data-translate="order_es">Enviar a</span>
                                         <span class="text-xl font-black">España</span>
                                     </div>
                                 </div>
-                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors shadow-inner">
+                                <div class="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors">
                                     <i data-feather="chevron-right" class="w-6 h-6"></i>
                                 </div>
                             </a>
@@ -183,9 +183,9 @@
                         </div>
                     </div>
 
-                    <!-- Product Image -->
+                    <!-- Product Image (Direita) -->
                     <div class="reveal flex justify-center items-center">
-                        <img src="images/artronol.png" width="550" height="550" alt="Artronol Premium Suplemento" class="w-full max-w-md h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700">
+                        <img src="images/artronol.png" width="550" height="550" alt="Artronol Premium" class="w-full max-w-md h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700">
                     </div>
                 </div>
             </div>
@@ -208,10 +208,9 @@
                 <button onclick="openModal()" class="hover:text-emerald-400 transition-colors" data-translate="link_contact">Contacte-nos</button>
             </div>
 
-            <div class="border-t border-gray-800 pt-8 text-[11px] leading-relaxed max-w-4xl mx-auto space-y-4 opacity-50 text-center">
+            <div class="border-t border-gray-800 pt-8 text-[11px] max-w-4xl mx-auto space-y-4 opacity-50 text-center">
                 <p data-translate="disclaimer_1">Este site não faz parte do site do Google™ ou da Google Inc. Este site NÃO é endossado pelo Google™ de forma alguma.</p>
-                <p data-translate="disclaimer_3">*Os resultados podem variar. As informações fornecidas têm fins educativos e não pretendem substituir o aconselhamento médico profissional.</p>
-                <p>*Estas declarações não foram avaliadas pela Food and Drug Administration. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença.</p>
+                <p data-translate="disclaimer_3">*Os resultados podem variar. Consulte sempre um profissional de saúde.</p>
             </div>
         </div>
     </footer>
@@ -224,10 +223,7 @@
                 <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors"><i data-feather="x"></i></button>
                 <h3 class="text-xl font-black mb-6 uppercase tracking-tight" data-translate="modal_title">Informação Legal</h3>
                 <div class="text-gray-600 text-sm space-y-4 max-h-[50vh] overflow-y-auto pr-2 leading-relaxed text-left">
-                    <p class="font-bold text-gray-900">Sobre o Produto</p>
-                    <p>Artronol é um suplemento alimentar de alta qualidade formulado com ingredientes premium. A eficácia pode variar de pessoa para pessoa dependendo de fatores biológicos individuais.</p>
-                    <p class="font-bold text-gray-900">Garantia de 90 Dias</p>
-                    <p>A nossa garantia cobre a sua primeira experiência com o produto. Caso não sinta os benefícios esperados, pode solicitar o reembolso total do valor do produto dentro de 90 dias após a receção.</p>
+                    <p>Artronol é um suplemento alimentar de alta qualidade. A eficácia pode variar de pessoa para pessoa. Oferecemos uma garantia de satisfação de 90 dias.</p>
                 </div>
                 <div class="mt-8 flex justify-end">
                     <button onclick="closeModal()" class="bg-gray-900 text-white px-10 py-3 rounded-xl font-bold hover:bg-black transition-all active:scale-95" data-translate="btn_close">Fechar</button>
@@ -273,7 +269,7 @@
                 'payment_info': 'Pago Seguro',
                 'footer_copy': '&copy; 2026 Artronol Official. Todos los derechos reservados.',
                 'link_privacy': 'Política de Privacidad',
-                'link_terms': 'Términos de Servicio',
+                'link_terms': 'Términos de Serviço',
                 'link_contact': 'Contáctenos',
                 'modal_title': 'Información Legal',
                 'btn_close': 'Cerrar',
